@@ -1,84 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Ochieng | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Angel Ochieng — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Angel Ochieng — Computational Modeling & Data Analytics student. Portfolio of Python, Java, C, and CUDA projects.">
 </head>
-
 <body>
-    <header>
-        <h1>Angel Ochieng</h1>
-        <p>Computational Modeling & Data Analytics | Virginia Tech</p>
-    </header>
-
-    <nav>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container navwrap">
+      <a class="brand" href="#hero">Angel Ochieng</a>
+      <nav class="nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-    </nav>
+        <a class="btn-ghost" href="https://github.com/angelochieng" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
 
-    <section id="about">
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Angel <span class="accent">Ochieng</span></h1>
+        <p class="lead">
+          Computational Modeling & Data Analytics student at Virginia Tech • Minor in Mathematics.<br>
+          I build performant data-driven solutions using Python, Java, C, and GPU/CUDA.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn-primary" href="#projects">View Projects</a>
+          <a class="btn-outline" href="#contact">Contact</a>
+        </div>
+
+        <ul class="meta-list">
+          <li><strong>Focus:</strong> Parallel Computing, Data Modeling</li>
+          <li><strong>Available for:</strong> Internships & Collaborations</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-stacked">
+          <div class="card card-top">
+            <h4>CUDA Performance</h4>
+            <p>GPU kernels, memory optimization, and benchmarking.</p>
+          </div>
+          <div class="card card-middle">
+            <h4>Python Modeling</h4>
+            <p>Data pipelines, visualization, statistical modeling.</p>
+          </div>
+          <div class="card card-bottom">
+            <h4>Systems in C</h4>
+            <p>Low-level memory-safe implementations and algorithms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- subtle animated gradient -->
+    <div class="background-gradient" aria-hidden="true"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-about">
+    <div class="container about-grid">
+      <div class="about-left">
         <h2>About Me</h2>
         <p>
-            Thank you for taking the time to visit my page. I am a driven 
-            <strong>Computational Modeling & Data Analytics</strong> student at 
-            <strong>Virginia Tech</strong>, with a minor in <strong>Mathematics</strong>.
-            I am passionate about creating meaningful impact in the data science realm 
-            and developing solutions that improve efficiency, security, and decision-making.
+          Thank you for taking the time to visit my page. I am a driven <strong>Computational Modeling & Data Analytics</strong> student at <strong>Virginia Tech</strong>, with a minor in <strong>Mathematics</strong>.
         </p>
         <p>
-            I thrive on collaboration, innovation, and solving complex problems. 
-            Let’s work together to build solutions that drive progress and make a difference.
+          I enjoy designing algorithms, working on parallel systems, and applying data-driven methods to solve real-world problems. My projects include class assignments, research code, and GPU-accelerated experiments.
         </p>
-    </section>
+        <p>
+          I thrive on collaboration and innovation — let’s build solutions that drive efficiency, security, and progress.
+        </p>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>CUDA & Parallel Computing</li>
-            <li>Data Modeling & Analysis</li>
-            <li>Mathematical Modeling</li>
-            <li>Git / GitHub</li>
-        </ul>
-    </section>
+        <div class="about-actions">
+          <a class="btn-primary" href="#projects">See Work</a>
+          <a class="btn-outline" href="mailto:your-email@example.com">Email Me</a>
+        </div>
+      </div>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-
-        <div class="project">
-            <h3>CUDA Parallel Matrix Multiplication</h3>
-            <p>GPU-accelerated matrix multiplication with optimized kernel execution and memory coalescing.</p>
-            <a href="https://github.com/angelochieng/AngelOchiengPortfolio" target="_blank">View Repository</a>
+      <aside class="about-right">
+        <div class="stat">
+          <div class="stat-num">Python</div>
+          <div class="stat-desc">Data analysis, pipelines</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">CUDA</div>
+          <div class="stat-desc">GPU kernels & optimization</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">C / Java</div>
+          <div class="stat-desc">Systems & OOP</div>
         </div>
 
-        <div class="project">
-            <h3>Systems Programming in C</h3>
-            <p>Low-level memory operations, pointers, dynamic allocation, and custom data structures.</p>
-            <a href="https://github.com/angelochieng" target="_blank">View Work</a>
+        <div class="resume-card">
+          <h4>Resume</h4>
+          <p>Download my CV (update link to your resume file)</p>
+          <a class="btn-ghost" href="#" target="_blank" rel="noreferrer">Download</a>
         </div>
+      </aside>
+    </div>
+  </section>
 
-        <div class="project">
-            <h3>Python Analytics & Modeling</h3>
-            <p>Data processing pipelines, visualization, and statistical analysis using Python.</p>
-            <a href="https://github.com/angelochieng" target="_blank">View Scripts</a>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-icon">Py</div>
+          <div class="skill-name">Python</div>
         </div>
-    </section>
+        <div class="skill">
+          <div class="skill-icon">C</div>
+          <div class="skill-name">C / Systems</div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon">J</div>
+          <div class="skill-name">Java</div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon">CUDA</div>
+          <div class="skill-name">CUDA & GPU</div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon">DS</div>
+          <div class="skill-name">Data Modeling</div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon">Git</div>
+          <div class="skill-name">Git & GitHub</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <h2>Featured Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card-2">
+          <div class="project-meta">CUDA • Performance</div>
+          <h3>Parallel Matrix Multiply (CUDA)</h3>
+          <p>High-performance GPU matrix multiplication; optimized shared memory and tiling strategies.</p>
+          <div class="project-links">
+            <a href="https://github.com/angelochieng/AngelOchiengPortfolio" target="_blank" rel="noreferrer">Repository</a>
+            <a href="#" target="_blank" rel="noreferrer">Readme</a>
+          </div>
+        </article>
+
+        <article class="project-card-2">
+          <div class="project-meta">C • Systems</div>
+          <h3>Memory-safe Utilities (C)</h3>
+          <p>Custom allocators, pointer-safe abstractions, and benchmarks against standard libc calls.</p>
+          <div class="project-links">
+            <a href="https://github.com/angelochieng" target="_blank" rel="noreferrer">Repository</a>
+            <a href="#" target="_blank" rel="noreferrer">Readme</a>
+          </div>
+        </article>
+
+        <article class="project-card-2">
+          <div class="project-meta">Python • Data</div>
+          <h3>Data Modeling & Visualization</h3>
+          <p>End-to-end data cleaning, modeling, and visualization pipelines for course projects and research.</p>
+          <div class="project-links">
+            <a href="https://github.com/angelochieng" target="_blank" rel="noreferrer">Repository</a>
+            <a href="#" target="_blank" rel="noreferrer">Readme</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-link">
+        <a href="https://github.com/angelochieng" target="_blank" rel="noreferrer">View all projects on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
         <h2>Contact</h2>
+        <p>If you'd like to discuss projects, internships, or collaborations — I’d love to hear from you.</p>
         <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="#" target="_blank">Coming Soon</a></p>
-    </section>
+        <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
+      </div>
 
-    <footer>
-        <p>© 2025 Angel Ochieng — Portfolio</p>
-    </footer>
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
 
+        <label>
+          <span>Email</span>
+          <input type="email" name="_replyto" required>
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Angel Ochieng — Built with ❤️ and CUDA</p>
+    </div>
+  </footer>
+
+  <script>
+    // small helpers: year, mobile nav
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('visible');
+    });
+
+    // close nav on link click (mobile)
+    document.querySelectorAll('.nav a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('visible'));
+    });
+  </script>
 </body>
 </html>
