@@ -1,243 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Angel Ochieng Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Angel Ochieng — Computational Modeling & Data Analytics student. Portfolio of Python, Java, C, and CUDA projects.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Ochieng | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAV -->
-  <header class="site-header">
-    <div class="container navwrap">
-      <a class="brand" href="#hero">Angel Risper Ochieng</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a class="btn-ghost" href="https://github.com/angelochieng" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-left">
-        <p class="eyebrow"> I am </p>
-        <h1>Angel Risper <span class="accent">Ochieng</span></h1>
-        <p class="lead">
-          A driven Computational Modeling & Data Analytics student at Virginia Tech with a Minor in Mathematics.<br>
-          I am adaptable, a fast learner and have a sharp eye for detail that can be put to the test in high pressure situations. 
-         
-        </p>
-
-        <div class="hero-ctas">
-          <a class="btn-primary" href="#projects">View Projects</a>
-          <a class="btn-outline" href="#contact">Contact</a>
-        </div>
-
-        <ul class="meta-list">
-          <li><strong>Focus:</strong> Data Analytics, Programming</li>
-          <li><strong>Available for:</strong> Internships & Collaborations</li>
-        </ul>
-      </div>
-
-      <div class="hero-right">
-        <div class="card-stacked">
-          <div class="card card-top">
-            <h4>CUDA/MPI/OMP Performance</h4>
-            <p> CPU & GPU kernels, memory optimization, and experimentation</p>
-          </div>
-          <div class="card card-middle">
-            <h4>Python Modeling</h4>
-            <p>Data, visualization, statistical modeling.</p>
-          </div>
-          <div class="card card-bottom">
-            <h4>Systems in C</h4>
-            <p>Low level memory safe implementations and algorithms.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- subtle animated gradient -->
-    <div class="background-gradient" aria-hidden="true"></div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section section-about">
-    <div class="container about-grid">
-      <div class="about-left">
-        <h2>About Me</h2>
-        <p>
-          Thank you for taking the time to visit my page. I am a driven <strong>Computational Modeling & Data Analytics</strong> student at <strong>Virginia Tech</strong>, with a minor in <strong>Mathematics</strong>.
-        </p>
-        <p>
-          I enjoy working in high pressure environments that expose me to more creativity and innovation. My projects include class assignments and project code that uses high GPU accelerated experiments.
-        </p>
-        <p>
-          I thrive on collaboration and communicaion and adapt to any scenario I find myself in. I am dependable and reliable and can be trusted to go above and beyond expectations. 
-        </p>
-
-        <div class="about-actions">
-          <a class="btn-primary" href="#projects"> View my Projects</a>
-          <a class="btn-outline" href="mailto:your-email@example.com">Email </a>
-        </div>
-      </div>
-
-      <aside class="about-right">
-        <div class="stat">
-          <div class="stat-num">HTML</div>
-          <div class="stat-desc">Programming language </div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">Java</div>
-          <div class="stat-desc">Java script</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">C</div>
-          <div class="stat-desc">MPI, OMP, CUDA, basic C </div>
-        </div>
-         </div>
-       </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">
-          <div class="skill-icon">Py</div>
-          <div class="skill-name">Python</div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">C</div>
-          <div class="skill-name">C</div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">J</div>
-          <div class="skill-name">Java</div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">SQL</div>
-          <div class="skill-name">SQL</div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">R</div>
-          <div class="skill-name">R/RStudio</div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">Git</div>
-          <div class="skill-name">Git & GitHub</div>
-        </div>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Angel Ochieng</h1>
+    <p>Computational Modeling & Data Analytics Student | Curious | Problem Solver</p>
+    <div class="links">
+      <a href="https://github.com/angelochieng" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/angelochieng/" target="_blank">LinkedIn</a>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section section-dark">
-    <div class="container">
-      <h2>Featured Projects</h2>
+  <!-- About Me -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Thank you for visiting my page. I am a driven Computational Modeling & Data Analytics student at Virginia Tech, with a minor in Mathematics. I thrive on collaboration, innovation, and creating impact through data science projects.</p>
+  </section>
 
-      <div class="projects-grid">
-        <article class="project-card-2">
-          <div class="project-meta">CUDA • Performance</div>
-          <h3>Parallel Matrix Multiply (CUDA)</h3>
-          <p>High performance GPU matrix multiplication; optimized shared memory strategies.</p>
-          <div class="project-links">
-            <a href="https://github.com/angelochieng/AngelOchiengPortfolio" target="_blank" rel="noreferrer">Repository</a>
-            <a href="#" target="_blank" rel="noreferrer">Readme</a>
-          </div>
-        </article>
-
-        <article class="project-card-2">
-          <div class="project-meta">C • Systems</div>
-          <h3>OMP/MPI (C)</h3>
-          <p>Experience with parallel computing for high level results.</p>
-          <div class="project-links">
-            <a href="https://github.com/angelochieng" target="_blank" rel="noreferrer">Repository</a>
-            <a href="#" target="_blank" rel="noreferrer">Readme</a>
-          </div>
-        </article>
-
-        <article class="project-card-2">
-          <div class="project-meta">Python • Data</div>
-          <h3>Data Modeling & Visualization</h3>
-          <p> Collecting, cleaning, modeling, and visualization pipelines for course projects and research work with Engineers without borders.</p>
-          <div class="project-links">
-            <a href="https://github.com/angelochieng" target="_blank" rel="noreferrer">Repository</a>
-            <a href="#" target="_blank" rel="noreferrer">Readme</a>
-          </div>
-        </article>
+  <!-- Projects -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>GitHub Portfolio</h3>
+        <p>Built from scratch using HTML, CSS, and JavaScript. Showcases personal projects and skills.</p>
+        <a href="https://github.com/angelochieng/AngelOchiengPortfolio" target="_blank">View Repo</a>
       </div>
-
-      <div class="more-link">
-        <a href="https://github.com/angelochieng" target="_blank" rel="noreferrer">View all projects on GitHub →</a>
+      <div class="project-card">
+        <h3>DataFest Project</h3>
+        <p>Worked on messy datasets to extract insights, clean data, and generate visualizations.</p>
+        <a href="https://github.com/angelochieng/datafest-project" target="_blank">View Repo</a>
       </div>
+      <!-- Add more projects as needed -->
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container contact-grid">
-      <div>
-        <h2>Contact</h2>
-        <p>If you'd like to discuss projects, internships, or collaborations,I would love to hear from you.</p>
-        <p>Email: <a href="mailto:angelochieng@vt.edu">angelochieng@vt.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/angel-ochieng" target="_blank">https://www.linkedin.com/in/angel-ochieng/</a></p>
-      </div>
-
-      <form class="contact-form" action="https://formspree.io/f/mgvgprpv" method="POST">
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" required>
-        </label>
-
-        <label>
-          <span>Email</span>
-          <input type="email" name="_replyto" required>
-        </label>
-
-        <label>
-          <span>Message</span>
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </div>
+  <!-- Skills -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python | Java | C | SQL | HTML/CSS | JavaScript</li>
+      <li>Data Cleaning | Parallel Computing | GitHub | GitHub Pages</li>
+      <li>Portfolio & Website Development | MLOps Concepts</li>
+    </ul>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Angel Ochieng - Built with CUDA</p>
-    </div>
-  </footer>
-
-  <script>
-    // small helpers: year, mobile nav
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('visible');
-    });
-
-    // close nav on link click (mobile)
-    document.querySelectorAll('.nav a').forEach(a => {
-      a.addEventListener('click', () => nav.classList.remove('visible'));
-    });
-  </script>
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:angelochieng@example.com">angelochieng@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/angelochieng/" target="_blank">Connect with me</a></p>
+  </section>
 </body>
 </html>
