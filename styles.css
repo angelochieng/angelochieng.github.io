@@ -262,3 +262,11 @@ h1{
   .skills-grid{ grid-template-columns: 1fr; }
   .nav.visible{ right:12px; left:12px; top:64px; }
 }
+.profile-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
