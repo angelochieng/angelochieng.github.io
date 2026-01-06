@@ -5,57 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angel Ochieng | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Angel Ochieng</h1>
-    <p>Computational Modeling & Data Analytics Student | Curious | Problem Solver</p>
-    <div class="links">
-      <a href="https://github.com/angelochieng" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/angelochieng/" target="_blank">LinkedIn</a>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <h2 class="logo">Angel Ochieng</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </section>
+  </nav>
 
-  <!-- About Me -->
-  <section class="about">
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Angel Ochieng</h1>
+      <p>Computational Modeling & Data Analytics Student | Curious | Problem Solver</p>
+      <div class="hero-links">
+        <a href="https://github.com/angelochieng" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/angelochieng/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Thank you for visiting my page. I am a driven Computational Modeling & Data Analytics student at Virginia Tech, with a minor in Mathematics. I thrive on collaboration, innovation, and creating impact through data science projects.</p>
+    <p>Thank you for visiting my page. I am a driven Computational Modeling & Data Analytics student at Virginia Tech, with a minor in Mathematics. My passion lies in creating meaningful impact whether for organizations, stakeholders, or society at large in the data science realm. I thrive on collaboration and innovation, and I’m eager to connect with like-minded professionals.</p>
   </section>
 
-  <!-- Projects -->
-  <section class="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project-card">
+        <img src="assets/images/portfolio.png" alt="GitHub Portfolio Screenshot">
         <h3>GitHub Portfolio</h3>
         <p>Built from scratch using HTML, CSS, and JavaScript. Showcases personal projects and skills.</p>
         <a href="https://github.com/angelochieng/AngelOchiengPortfolio" target="_blank">View Repo</a>
       </div>
       <div class="project-card">
+        <img src="assets/images/datafest.png" alt="DataFest Screenshot">
         <h3>DataFest Project</h3>
         <p>Worked on messy datasets to extract insights, clean data, and generate visualizations.</p>
         <a href="https://github.com/angelochieng/datafest-project" target="_blank">View Repo</a>
       </div>
-      <!-- Add more projects as needed -->
+      <!-- Add more projects here -->
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="skills">
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>Python | Java | C | SQL | HTML/CSS | JavaScript</li>
-      <li>Data Cleaning | Parallel Computing | GitHub | GitHub Pages</li>
-      <li>Portfolio & Website Development | MLOps Concepts</li>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>SQL</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+      <li>GitHub / GitHub Pages</li>
+      <li>Data Cleaning & Analysis</li>
+      <li>Parallel Computing</li>
+      <li>MLOps Concepts</li>
     </ul>
   </section>
 
-  <!-- Contact -->
-  <section class="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:angelochieng@example.com">angelochieng@example.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/angelochieng/" target="_blank">Connect with me</a></p>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
